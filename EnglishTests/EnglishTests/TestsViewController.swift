@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TestsViewController: UIViewController {
 
     var test: String = "test"
 
@@ -34,6 +34,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        addFoodWordsAnswer(Dictionary: foodWordsQuestion)
+        
         view.backgroundColor = .systemGray
         trueAnswersLabel.text = String(trueAnswers)
         helloLabel.text = helloText //для передачи данных с 1 вц
