@@ -17,76 +17,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waI-fx-AR0">
-                                <rect key="frame" x="139" y="378" width="136" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Button">
-                                    <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Zw-7h-QXD">
+                                <rect key="frame" x="124" y="343" width="166" height="175"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waI-fx-AR0">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="c77-eb-RCY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Button">
+                                            <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xhb-a4-gPA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Em3-Je-Tpq">
+                                        <rect key="frame" x="0.0" y="45" width="166" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Button">
+                                            <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNE-sG-mnN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1k-OK-Qzb">
+                                        <rect key="frame" x="0.0" y="90" width="166" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Button">
+                                            <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j1j-Fe-Aax"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbG-2Q-o3t">
+                                        <rect key="frame" x="0.0" y="135" width="166" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Button">
+                                            <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xU1-Zh-6kX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7X-E3-zw2">
+                                <rect key="frame" x="145" y="568" width="124" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ha9-VM-IGL"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="filled" title="start">
+                                    <fontDescription key="titleFontDescription" name="Charter-Roman" family="Charter" pointSize="25"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="startButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xhb-a4-gPA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Em3-Je-Tpq">
-                                <rect key="frame" x="139" y="430" width="136" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Button">
-                                    <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="30"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="startButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNE-sG-mnN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1k-OK-Qzb">
-                                <rect key="frame" x="139" y="482" width="136" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Button">
-                                    <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="30"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="startButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j1j-Fe-Aax"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbG-2Q-o3t">
-                                <rect key="frame" x="139" y="534" width="136" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Button">
-                                    <fontDescription key="titleFontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="30"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="startButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xU1-Zh-6kX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7X-E3-zw2">
-                                <rect key="frame" x="139" y="682" width="136" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="start"/>
                                 <connections>
                                     <action selector="startButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLM-vg-Lqp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-Os-OKt">
-                                <rect key="frame" x="98" y="296" width="219" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-Os-OKt">
+                                <rect key="frame" x="124" y="243" width="166" height="50"/>
                                 <color key="backgroundColor" red="0.53646886890000001" green="0.61327709220000004" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RNY-CR-LPZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVQ-Oz-e9d">
-                                <rect key="frame" x="48" y="301" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de5-5f-XKG">
-                                <rect key="frame" x="152" y="201" width="110" height="64"/>
+                                <rect key="frame" x="31" y="166" width="110" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -99,26 +101,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VJ-Kk-jkh">
-                                <rect key="frame" x="163" y="752" width="88" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="back"/>
-                                <connections>
-                                    <action selector="backButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WCH-O0-KHQ"/>
-                                    <segue destination="PHo-FR-AqA" kind="unwind" unwindAction="unwindFor:" id="ZdJ-qG-p0w"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello, " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpk-9H-B5H">
-                                <rect key="frame" x="134" y="145" width="147" height="37"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello, " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpk-9H-B5H">
+                                <rect key="frame" x="65" y="137" width="147" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="31"/>
                                 <color key="textColor" red="0.35792816789999998" green="0.2143502615" blue="0.34070755219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVQ-Oz-e9d">
+                                <rect key="frame" x="65" y="224" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.7577218340918338" green="0.90279582176916295" blue="0.94031512105414039" alpha="0.65096845769557821" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Zw-7h-QXD" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.4" id="159-cW-EPe"/>
+                            <constraint firstItem="3Zw-7h-QXD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="28B-Hi-GES"/>
+                            <constraint firstItem="V7X-E3-zw2" firstAttribute="top" secondItem="bbG-2Q-o3t" secondAttribute="bottom" constant="50" id="4dn-CA-qrm"/>
+                            <constraint firstItem="V7X-E3-zw2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5Z0-M2-348"/>
+                            <constraint firstItem="waI-fx-AR0" firstAttribute="top" secondItem="nYa-Os-OKt" secondAttribute="bottom" constant="50" id="87B-b1-cKR"/>
+                            <constraint firstItem="nYa-Os-OKt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="B5l-lk-JhR"/>
+                            <constraint firstItem="V7X-E3-zw2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="CF0-mH-Yvg"/>
+                            <constraint firstItem="3Zw-7h-QXD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.8" id="dCi-EY-JvD"/>
+                            <constraint firstItem="nYa-Os-OKt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="eyg-y6-dYB"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="of0-WU-F7V"/>
@@ -137,7 +147,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="PHo-FR-AqA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1585.5072463768117" y="26.785714285714285"/>
         </scene>
