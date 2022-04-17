@@ -28,68 +28,54 @@ var foodWordsQuestion = [
     "клубника" : "strawberry",
     "грецкий орех" : "walnut",
     "арбуз" : "watermelon",
-    
-    "гранат" : "",
-    "огурец" : "",
-    "манго" : "",
-    "редис" : "",
-    "картофель" : "",
-    "морковь" : "",
-    "свекла" : "",
-    "хрен" : "",
-    "лук" : "",
-    "перец" : "",
-    "черешня" : "",
-    "авокадо" : "",
-    "банан" : "",
-    "мандарин" : "",
-    "голубика" : "",
-    "фундук" : "",
-    "кукуруза" : "",
-    "баклажан" : "",
-    "тыква" : "",
-    "брокколи" : "",
-    "капуста" : "",
-    "кабачок" : "",
-    "чеснок" : "",
-    "репа" : "",
-    "помидор" : "",
-    "кокос" : "",
+    "гранат" : "garnet",
+    "огурец" : "cucumber",
+    "манго" : "mango",
+    "редис" : "radish",
+    "картофель" : "potato",
+    "морковь" : "carrot",
+    "свекла" : "beet",
+    "хрен" : "horseradish",
+    "лук" : "onion",
+    "перец" : "pepper",
+    "черешня" : "cherries",
+    "авокадо" : "avocado",
+    "банан" : "banana",
+    "мандарин" : "tangerine",
+    "голубика" : "blueberry",
+    "фундук" : "hazelnut",
+    "кукуруза" : "corn",
+    "баклажан" : "eggplant",
+    "тыква" : "pumpkin",
+    "брокколи" : "broccoli",
+    "капуста" : "cabbage",
+    "кабачок" : "zucchini",
+    "чеснок" : "garlic",
+    "репа" : "turnip",
+    "помидор" : "tomato",
+    "кокос" : "coconut",
 ]
 
+var foodWordsAnswer = [String]()
 
 
-
-var foodWordsAnswer = [
-    "almond",
-    "apricot",
-    "blackberry",
-    "blueberry",
-    "cashew",
-    "cherry",
-    "cranberry",
-    "grape",
-    "hazelnut",
-    "lemon",
-    "lime",
-    "melon",
-    "peach",
-    "peanut",
-    "pear",
-    "pineapple",
-    "plum",
-    "raspberry",
-    "strawberry",
-    "walnut",
-    "watermelon"
-]
 
 var questionQountValue = 0
 var trueAnswers = 0 //кол-во правильных ответов
 var answer = 0 //флаг правильного ответа при нажатии кнопки
 var testWord = ""
 
-extension ViewController {
+extension TestsViewController {
+    
+ 
+    func addFoodWordsAnswer(Dictionary: [String : String]) -> [String] {
+        for values in Dictionary {
+            foodWordsAnswer.append("\(Dictionary.values)")
+        }
+        return foodWordsAnswer
+    } //создание массива с вариантами ответов
+
+    
     
     
     func firstAnswerPressed() {
@@ -210,10 +196,11 @@ extension ViewController {
             let randomQuestion = foodWordsQuestion.randomElement()
 
             let randomAnswerOne = randomQuestion?.value
-            let randomanswerTwo = foodWordsQuestion.randomElement()?.value //ИСКЛЮЧИТЬ ПРЕДЫДУЩЕЕ СЛОВО
-            let randomAnswerThree = foodWordsQuestion.randomElement()?.value //ИСКЛЮЧИТЬ ПРЕДЫДУЩЕЕ СЛОВО
-            let randomanswerFour = foodWordsQuestion.randomElement()?.value //ИСКЛЮЧИТЬ ПРЕДЫДУЩЕЕ СЛОВО
-
+            let randomanswerTwo = foodWordsQuestion.randomElement()?.value
+            let randomAnswerThree = foodWordsQuestion.randomElement()?.value
+            let randomanswerFour = foodWordsQuestion.randomElement()?.value
+         
+            
             let randomAnswers = [randomAnswerOne, randomanswerTwo, randomAnswerThree, randomanswerFour]
             let shuffleRandomAnswers = randomAnswers.shuffled()
 
@@ -225,6 +212,9 @@ extension ViewController {
             testWord = randomAnswerOne ?? "error"
             wordsLabel.text = testWord
             questionQount.text = String(questionQountValue)
+            
+            foodWordsQuestion.removeValue(forKey: questionLabel.text ?? "") //ИСКЛЮЧАЕТ ПРЕДЫДУЩЕЕ СЛОВО
+
             
         } else if questionQountValue == 11 {
             questionQountValue = 0
@@ -263,9 +253,9 @@ extension ViewController {
             let randomQuestion = foodWordsQuestion.randomElement()
 
             let randomAnswerOne = randomQuestion?.value
-            let randomanswerTwo = foodWordsQuestion.randomElement()?.value //ИСКЛЮЧИТЬ ПРЕДЫДУЩЕЕ СЛОВО
-            let randomAnswerThree = foodWordsQuestion.randomElement()?.value //ИСКЛЮЧИТЬ ПРЕДЫДУЩЕЕ СЛОВО
-            let randomanswerFour = foodWordsQuestion.randomElement()?.value //ИСКЛЮЧИТЬ ПРЕДЫДУЩЕЕ СЛОВО
+            let randomanswerTwo = foodWordsQuestion.randomElement()?.value
+            let randomAnswerThree = foodWordsQuestion.randomElement()?.value
+            let randomanswerFour = foodWordsQuestion.randomElement()?.value
 
             let randomAnswers = [randomAnswerOne, randomanswerTwo, randomAnswerThree, randomanswerFour]
             let shuffleRandomAnswers = randomAnswers.shuffled()
@@ -279,6 +269,9 @@ extension ViewController {
             wordsLabel.text = testWord
             questionQount.text = String(questionQountValue)
             trueAnswersLabel.text = String(trueAnswers)
+          
+            foodWordsQuestion.removeValue(forKey: questionLabel.text ?? "") //ИСКЛЮЧАЕТ ПРЕДЫДУЩЕЕ СЛОВО
+
         
         } else if questionQountValue == 11 {
             questionQountValue = 0
@@ -290,15 +283,7 @@ extension ViewController {
     
 }
 
-//enum Answers {
-//    case one
-//    case two
-//    case three
-//    case forth
-//    case five
-//}
-//
-//var answersCase: Answers = .one
+
 
 
 
