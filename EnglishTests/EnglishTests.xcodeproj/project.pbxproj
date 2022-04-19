@@ -15,19 +15,23 @@
 		0C12BE5C273CDD7300268453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C12BE5A273CDD7300268453 /* LaunchScreen.storyboard */; };
 		0C12BE64273CDE0100268453 /* Words and Metods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C12BE63273CDE0100268453 /* Words and Metods.swift */; };
 		0C36569F273ED1040022E51B /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36569E273ED1040022E51B /* CategoriesViewController.swift */; };
+		0CF48564280C1DE500BFF0F4 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF48563280C1DE500BFF0F4 /* HapticsManager.swift */; };
+		0CF48566280CA98600BFF0F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF48565280CA98600BFF0F4 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C12BE4C273CDD6500268453 /* EnglishTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C12BE4F273CDD6500268453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C12BE51273CDD6500268453 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C12BE53273CDD6500268453 /* TestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsViewController.swift; sourceTree = "<group>"; };
+		0C12BE53273CDD6500268453 /* TestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		0C12BE56273CDD6500268453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C12BE58273CDD7300268453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C12BE5B273CDD7300268453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C12BE5D273CDD7300268453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C12BE63273CDE0100268453 /* Words and Metods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Words and Metods.swift"; sourceTree = "<group>"; };
 		0C36569E273ED1040022E51B /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		0CF48563280C1DE500BFF0F4 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		0CF48565280CA98600BFF0F4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +66,15 @@
 			children = (
 				0C12BE4F273CDD6500268453 /* AppDelegate.swift */,
 				0C12BE51273CDD6500268453 /* SceneDelegate.swift */,
-				0C12BE63273CDE0100268453 /* Words and Metods.swift */,
-				0C12BE55273CDD6500268453 /* Main.storyboard */,
 				0C12BE58273CDD7300268453 /* Assets.xcassets */,
 				0C12BE5A273CDD7300268453 /* LaunchScreen.storyboard */,
 				0C12BE5D273CDD7300268453 /* Info.plist */,
+				0C12BE55273CDD6500268453 /* Main.storyboard */,
 				0C12BE53273CDD6500268453 /* TestsViewController.swift */,
 				0C36569E273ED1040022E51B /* CategoriesViewController.swift */,
+				0C12BE63273CDE0100268453 /* Words and Metods.swift */,
+				0CF48563280C1DE500BFF0F4 /* HapticsManager.swift */,
+				0CF48565280CA98600BFF0F4 /* Extensions.swift */,
 			);
 			path = EnglishTests;
 			sourceTree = "<group>";
@@ -144,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF48564280C1DE500BFF0F4 /* HapticsManager.swift in Sources */,
 				0C12BE54273CDD6500268453 /* TestsViewController.swift in Sources */,
 				0C36569F273ED1040022E51B /* CategoriesViewController.swift in Sources */,
+				0CF48566280CA98600BFF0F4 /* Extensions.swift in Sources */,
 				0C12BE64273CDE0100268453 /* Words and Metods.swift in Sources */,
 				0C12BE50273CDD6500268453 /* AppDelegate.swift in Sources */,
 				0C12BE52273CDD6500268453 /* SceneDelegate.swift in Sources */,
@@ -170,6 +178,7 @@
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 /* End PBXVariantGroup section */
 
