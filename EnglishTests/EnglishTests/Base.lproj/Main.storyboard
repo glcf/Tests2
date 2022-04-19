@@ -129,7 +129,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="🤔">
                                                 <attributes>
-                                                    <font key="NSFont" size="70" name=".AppleColorEmojiUI"/>
+                                                    <font key="NSFont" metaFont="system" size="70"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
