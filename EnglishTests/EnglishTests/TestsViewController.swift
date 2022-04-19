@@ -9,7 +9,6 @@ import UIKit
 
 class TestsViewController: UIViewController {
     
-    
     @IBOutlet weak var backgroundFoodImageView: UIImageView!
     @IBOutlet weak var foodImageView: UIImageView!
     @IBOutlet weak var memojiLabel: UILabel!
