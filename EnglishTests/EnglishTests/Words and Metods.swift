@@ -103,7 +103,6 @@ let sadMemojies = [
 
 var foodWordStatictic = [String : Int]()
 
-
 func createWordStatistic () -> [String : Int] {
     var dictForHelp = foodWordsQuestion
     for (key, value) in dictForHelp {dictForHelp[key, default: value] = "\(0)"}
@@ -111,13 +110,6 @@ func createWordStatistic () -> [String : Int] {
     }
     return foodWordStatictic
 }
-
-
-
-
-
-
-
 
 var foodWordsAnswer = [String]()
 
