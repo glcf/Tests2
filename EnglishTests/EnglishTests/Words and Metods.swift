@@ -113,8 +113,6 @@ func createWordStatistic () -> [String : Int] {
 
 var foodWordsAnswer = [String]()
 
-
-
 var questionQountValue = 1
 var trueAnswers = 0 //кол-во правильных ответов
 var answer = 0 //флаг правильного ответа при нажатии кнопки
