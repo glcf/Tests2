@@ -7,9 +7,6 @@
 
 import UIKit
 
-
-
-
 var foodWordsQuestion = [
     "миндаль" : "almond",
     "абрикос" : "apricot",
@@ -59,11 +56,42 @@ var foodWordsQuestion = [
     "кокос" : "coconut",
     "цветная капуста" : "cauliflower",
     "гуава" : "guava",
-    "папайя" : "papaya"
+    "папайя" : "papaya",
+    "горох" : "peas",
+    "крыжовник" : "gooseberry",
+    "киви" : "kiwi",
+    "инжир" : "figs",
+    "айва" : "quince",
+    "алыча" : "cherry plum",
+    "боярышник" : "hawthorn",
+    "грейпфрут" : "grapefruit",
+    "маракуйя" : "passion fruit",
+    "нектарин" : "nectarine",
+    "фейхоа" : "feijoa",
+    "хурма" : "persimmon",
+    "имбирь" : "ginger",
+    "топинамбур" : "jerusalem artichoke",
+    "шпинат" : "spinach",
+    "сельдерей" : "celery",
+    "щавель" : "sorrel",
+    "петрушка" : "parsley",
+    "укроп" : "dill",
+    "спаржа" : "asparagus",
+    "базилик" : "basil",
+    "руккола" : "arugula",
+    "горчица" : "mustard",
+    "лук-порей" : "leek",
+    "смородина" : "currant",
+    "чечевица" : "lentils",
+    "грибы" : "mushrooms",
+    "рис" : "rice",
+    "пшеница" : "wheat",
+    "овёс" : "oats",
+    "оливки" : "olives",
+    "мята" : "mint",
+    "кунжут" : "sesame",
+    "изюм" : "raisin"
 ]
-
-
-
 
 let happyMemojies = [
     "🙃","😇","😏","🥳","🤩","🤪","🤗","🤤"
@@ -72,6 +100,22 @@ let happyMemojies = [
 let sadMemojies = [
 "😖", "😩", "😥", "😵‍💫", "😭", "😔", "😣", "😒"
 ]
+
+var foodWordStatictic = [String : Int]()
+
+func createWordStatistic () -> [String : Int] {
+    var dictForHelp = foodWordsQuestion
+    for (key, value) in dictForHelp {dictForHelp[key, default: value] = "\(0)"}
+    foodWordStatictic = dictForHelp.compactMapValues { str in Int(str)
+    }
+    return foodWordStatictic
+}
+
+
+
+
+
+
 
 
 var foodWordsAnswer = [String]()
@@ -84,11 +128,7 @@ var answer = 0 //флаг правильного ответа при нажат�
 var testWord = ""
 
 extension TestsViewController {
-    @objc private func successfullyBookedFlight() {
-        HapticsManager.shared.vibrate(for: .success)
-    } //вибро
-    
-    
+  
     func addFoodWordsAnswer(Dictionary: [String : String]) -> [String] {
         for values in Dictionary {
             foodWordsAnswer.append("\(Dictionary.values)")
@@ -96,6 +136,10 @@ extension TestsViewController {
         return foodWordsAnswer
     } //создание массива с вариантами ответов
 
+    
+    
+    
+    
     
     
     

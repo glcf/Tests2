@@ -13,6 +13,12 @@ class CategoriesViewController: UIViewController {
     @IBOutlet weak var categoryForthButton: UIButton!
     @IBOutlet weak var foodCategoryButton: UIButton!
     
+    @IBOutlet weak var statisticButton: UIButton!
+    @IBOutlet weak var settingsButton: UIButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUICategoriesViewController()

@@ -8,9 +8,6 @@
 import UIKit
 
 extension CategoriesViewController {
-    
-
-    
     func updateUICategoriesViewController() {
         foodCategoryButton.clipsToBounds = true
         foodCategoryButton.backgroundColor = UIColor.init(red: 40/255, green: 38/255, blue: 38/255, alpha: 1)
@@ -33,6 +30,9 @@ extension CategoriesViewController {
 }
 
 extension TestsViewController {
+    @objc func successfullyBookedFlight() {
+        HapticsManager.shared.vibrate(for: .success)
+    } //вибро
     
     func updateButtons() {
         poihaliButton.isHidden = true
@@ -57,18 +57,12 @@ extension TestsViewController {
     }
     
     func updateUITestsViewController() {
-        
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "veg") ?? UIImage.init())
-        
-
-        
         firstAnswerButton.layer.cornerRadius = 10
         secondAnswerButton.layer.cornerRadius = 10
         thirdAnswerButton.layer.cornerRadius = 10
         forthAnswerButton.layer.cornerRadius = 10
         questionLabel.layer.cornerRadius = 10
-        
-        
         startButton.clipsToBounds = true
         startButton.layer.cornerRadius = 8
         progressView.progress = 0
@@ -90,14 +84,12 @@ extension TestsViewController {
         memojiLabel.clipsToBounds = true
         memojiLabel.layer.cornerRadius = 50
         memojiLabel.backgroundColor = UIColor.init(red: 40/255, green: 38/255, blue: 38/255, alpha: 1)
-     
         backgroundFoodImageView.layer.cornerRadius = 50
         backgroundFoodImageView.backgroundColor = UIColor.init(red: 40/255, green: 0/255, blue: 0/255, alpha: 1)
         foodImageView.clipsToBounds = true
         foodImageView.layer.cornerRadius = 45
         foodImageView.backgroundColor = UIColor.init(red: 40/255, green: 38/255, blue: 38/255, alpha: 1)
         foodImageView.isHidden = true
-
         startButton.clipsToBounds = true
         startButton.layer.cornerRadius = 8
         startButton.backgroundColor = UIColor.init(red: 40/255, green: 38/255, blue: 38/255, alpha: 1)
